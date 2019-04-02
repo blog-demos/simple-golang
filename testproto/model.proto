@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package testproto;
+
+message Student{
+    Person person = 1;
+    int32 schoolId = 2;
+}
+
+message Person{
+    string name = 1;
+    int32 age = 2;
+    Tel tel = 3;
+}
+
+message Tel{
+    int32 number = 1;
+}
